@@ -15,6 +15,11 @@ let currentProductsList = document.querySelector(".added-quantity");
 let updatedProductList = document.querySelector(".updated-quantity");
 let cart = [];
 
+if (cart.length === 0) {
+  currentProductsList.innerHTML = "No items added.";
+  updatedProductList.innerHTML = "No items added.";
+}
+
 plus.forEach((element) => {
   element.addEventListener("click", (event) => {
     let target = event.target;
