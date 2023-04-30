@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/845ae26aa3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bill Splitter</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="btn-cart"
+        ><i class="fa-solid fa-cart-shopping"></i
+        ><span class="badge">0</span></a
+      >
+    </nav>
+    <main class="main">
+      <div class="row">
+        <div class="card">
+          <img src="assets/img/McChicken.png" alt="" />
+          <div class="product-text">
+            <p class="title">McChicken</p>
+            <p class="price">$11</p>
+            <div class="quantity-container"
+              ><i class="fa-solid fa-minus minus"></i
+              ><input type="text" class="quantity" value="1" /><i
+                class="fa-solid fa-plus plus"
+              ></i
+            ></div>
+            <a href="#" class="add-to-cart">Add to cart</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/whopper.png" alt="" />
+          <div class="product-text">
+            <p class="title">Whopper</p>
+            <p class="price">$12</p>
+            <div class="quantity-container"
+              ><i class="fa-solid fa-minus minus"></i
+              ><input type="text" class="quantity" value="1" /><i
+                class="fa-solid fa-plus plus"
+              ></i
+            ></div>
+            <a href="#" class="add-to-cart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="quantity-container">
+        <div class="col">
+          <h2>Products Added</h2>
+          <hr />
+          <ul class="added-quantity"></ul>
+        </div>
+        <div class="col">
+          <h2>Updated Quantity</h2>
+          <hr />
+          <ul class="updated-quantity"></ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
